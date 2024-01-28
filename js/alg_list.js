@@ -511,6 +511,19 @@ var lxs = {
 "FRD5":["R U' R' U R U' R'", "R U' R' U' R U R' U2 R U' R'"],
 };
 
+var eopair = {
+"Solved Pair":["F R' F' R", "F R U R' U' F'", "R' F R F'", "f' U' f", "S' R U' R' U' S", "r U r' U2 M' U M", "S R' U' R U R S'", "S' U' S", "S' U R U2 R' S", "R U R' S' U' S", "F R' F' R U S' U' S"],
+"OU 2 Misoriented":["F R' F' U R", "R U f' U f", "F R2 U R' U' F'", "F' U F R", "F R F'", "f R f' U2 R", "F' U' F U R", "R F' U' F", "f R' f' U' R", "R f' U f", "R f' U2 f", "R f' U' f", "R F' U F", "R' f R U R U' f'", "R U' f' U' f"],
+"OU 4 Misoriented":["R' U' R S R' S' U' R", "R' U2 R S' U' S", "R U2 S' U' S", "F' U F2 R F'", "S' U' R' U2 R S", "R U' S' U' S", "R' f' U' f2 R f' R'", "S' U R' U2 R S", "R U S' U' S", "R S R' S' U' R", "R' S R S' U R", "R S' U' S", "R S' U' R U2 R' S", "R2 U' R' S' U' S", "R2 S R S' U R"],
+"OU 6 Misoriented":["S R S' R' F R U R U' F'"],
+"MU 2 Misoriented":["R' F' U' F R", "f U R' U' f'", "f' U f R'", "F' U' F R2", "R' f R2 f'", "f R' f'"],
+"MU 4 Misoriented":["R U2 R U R' S R' S'", "R' U2 R U S R S'", "F R2 f' U' S", "R D r' U' r D' R'", "R' F' U' F2 R F'", "R' U' S R S'", "R U2 R' U' S R S'", "f U R' U' F' R S'", "S' U' S R' U' R", "R U R' S R' S'", "R U R' S' U' S R", "f' U' f2 R2 f'", "R' S' U' S R", "D' r U r' U' D R", "R' U' f R2 U R' U' f'", "f' R' U2 R f", "R' U' R2 U2 S R' S'", "D r' U r D' R'", "S R' F R2 f'", "R2 U R' S' U' S R"],
+"MU 6 Misoriented":["S' U' S R' U' F R F'", "D r' U r D' R2 F R F'", "R D r' U' r D' R2 F R F'", "D r' U' r D' R F R' F'", "R S R S' R2 F R' F'", "S R S' R' f R2 f'"],
+"MR 2 Misoriented":["F R2 F' U' R", "R2 F' U' F R", "f R f' R' U2 R2", "f U R U' f' R", "R' U R' F R2 F'", "R' f R' f'"],
+"MR 4 Misoriented":["S R U' R' U R S' R", "R U2 R' U S R S' R", "R2 U' R S R' S'", "R U' R' S R S' R' U R2", "R U' R' U S R S' R", "R D' r U' r' D R2", "R U' R' U' S R S' R", "D r' U' r D' R'", "R2 U R2 S R S' R", "R' f' R' U2 R f", "f' R' U2 R f R", "S' U' R' U2 R S R", "S R S' R' U R2", "R' S R S' U R2", "S R S' R", "R' S R' S'", "R D' U r U' r' D R2", "S R S' R' f R' f' R2", "R' U2 R2 S R S'", "R U2 R2 f R2 F' R S'"],
+"MR 6 Misoriented":["F R' F' R2 D r' U r D'", "D r' U' r D' R2 F R F'", "S R S' R2 F R' F'", "R' S R S' U2 S' U' S R2", "R' B' R2 B R' S R S' R", "R S' U' S2 R' S' U R"],
+}
+
 window.algs = {
     "ZBLL (Juliette Sebastien)": zbll_juliette,
     "ZBLL (Jabari Nuruddin, Justin Taylor, Tao Yu)" :zbll_jabari_justin_tao,
@@ -520,5 +533,6 @@ window.algs = {
     "PLL": PLL,
 
     "LXS": lxs,
+    "EOPair": eopair,
     //"test": test,
 };
