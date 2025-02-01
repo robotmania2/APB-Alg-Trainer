@@ -524,6 +524,27 @@ var eopair = {
 "MR 6 Misoriented":["F R' F' R2 D r' U r D'", "D r' U' r D' R2 F R F'", "S R S' R2 F R' F'", "R' S R S' U2 S' U' S R2", "R' B' R2 B R' S R S' R", "R S' U' S2 R' S' U R"],
 }
 
+var brpair = {
+"Oriented UFR":["R' U' F R2 F' R'", "R' U2' R2", "R' U' R2", "R U R' U R2", "R2 U' R2'", "R U' R2'", "R2"],
+"Oriented FRU":["R2 U' R' U R2", "R' U' R", "R U' R2' U' R", "R U2' R2' U' R","R' U R' U' R", "R U R2", "R U R' U' R"],
+"Oriented RUF":["R", "R' U' R U' R", "R' U2 R U' R", "R' U R' U' R2	", "R' U R U' R	", "R2 U R2 U' R", "(R2 U' R' U R U' R"],
+"Oriented DBR":["f R' f' R", "S R S' R'", "R2 U R2 U' R2"],	
+"Oriented BRD":["R' U R2'", "R2' U' F R2 F' R2'", "R' U2 R2 U' R2'", "R' U2 R U' R2"],
+"Oriented RDB":["R2 U' R", "R2 U' R' U R U' R2", "R2 U' R' U R' U' R2", "R U R U' R"],
+"Oriented DFR":["R U' R' U' R	", "R2 U R2", "R U' R U R2' U' R", "R2' U2' R2 U' R2'"],
+"Oriented RDF":["R U' R", "R' U R2' U' R", "R U' R' U R U' R2", "R U' R' U R' U' R2"],
+"Oriented FRD":["R U R U' R2", "R'", "R' S R S' R'"],
+"Misoriented UFR":["S R' S' U' R2", "R U R' f R' f'", "R U2' R' f R' f'", "F R' F' R2 U' R", "R' f R' f'", "R' F R2 F' R2' U' R", "R2 U2' R' f R' f'"],
+"Misoriented FRU":["f R' f' R2 U' R2'", "R u R' U R' U' R u'", "R' F R2 F' R' U R' U' R", "f R' f'", "f R f' R", "R' f R f' R", "R U R' S' U' S R'"],
+"Misoriented RUF":["f R' f' R U' R U R2'", " R U R' S R S'", "f R f'", "R U' R' f R f'", "R' U2' f R f'", "R' S R S' R", "R U2' R' f R f'"],
+"Misoriented DBR":["R' f R f'", "f R' f' R U' f R' f' R", "D r' U r D'", "S R' S' R"],
+"Misoriented BRD":["R' F R2 F' R' U R U' R", "R2 U R2' f R f' R", "R2 U R2' f R2 f'", "R S' R U' R' S U' R"],
+"Misoriented RDB":["R' U2' F R2 F'", "R' f R' f' R2 U' R2'", "R' U2' f R f' R", "R F R' F' R U' R"],
+"Misoriented DFR":["f' U' f R", "R U R' f R f' R", "R U R2' f R f' R", "R f R' f'"],
+"Misoriented RDF":["F R' F' R U' R", "u R2 U' R' U R' u' R", "F R F' R U' R", "R2 U2 f R f' R"],
+"Misoriented FRD":["S R' S'", "R' u R U' R' u'", "R U R2 U2' R' f R' f'", "u' R U R U' R' u R'"],
+}
+
 window.algs = {
     "ZBLL (Juliette Sebastien)": zbll_juliette,
     "ZBLL (Jabari Nuruddin, Justin Taylor, Tao Yu)" :zbll_jabari_justin_tao,
@@ -534,5 +555,6 @@ window.algs = {
 
     "LXS": lxs,
     "EOPair": eopair,
+    "Pair Creation": brpair
     //"test": test,
 };
